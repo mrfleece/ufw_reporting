@@ -63,7 +63,7 @@ output { }
 ```
 
 Each of these will contain zero or more plugin configurations that serves the specific needs throughout the ETL process.
-For the current needs the configuration file used is [resources/03-configurations/logstash.conf](logstash.conf)
+For the current needs the configuration file used is [logstash.conf](resources/03-configurations/logstash.conf)
 
 ##### Implementation notes
 - **input stage**
@@ -106,7 +106,7 @@ Extract the Kibana zip archive into preferred target folder. Run **kibana.bat** 
 By default Kibana runs on 5601 port.
 
 In order to import the custom objects used in this particular project(index patterns, visualizations and dashboards), navigate to the [Saved Objects](http://localhost:5601/app/management/kibana/objects) page.
-Choose **import** and then upload the  [resources/03-configurations/export.ndjson](export.ndjson) file.
+Choose **import** and then upload the  [export.ndjson](resources/03-configurations/export.ndjson)file.
 Navigate to [Dashboards](http://localhost:5601/app/dashboards) and open the newly created **Attacks** dashboard.
 The dashboards shows visualizations for the number of blocked attack attempts by country as well as mostly attacked target machines. There is an option to define a custom time frame or choose a predefined one.
 
